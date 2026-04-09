@@ -1,99 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>yyza1</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: #fff;
-        }
-        header {
-            text-align: center;
-            padding: 40px 20px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        header p {
-            color: #aaa;
-        }
-        nav {
-            text-align: center;
-            padding: 10px;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #f39c12;
-        }
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 10px;
-            padding: 20px;
-        }
-        .gallery img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #777;
-        }
-        .instagram {
-            margin-top: 10px;
-        }
-        .instagram a {
-            color: #f39c12;
-            text-decoration: none;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>yyza1 — Photography</title>
+
+<style>
+:root {
+    --bg: #ffffff;
+    --text: #111;
+    --muted: #777;
+    --line: #eaeaea;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+/* NAV */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 10%;
+    border-bottom: 1px solid var(--line);
+}
+
+nav h1 {
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--muted);
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: black;
+}
+
+/* HERO */
+.hero {
+    padding: 100px 10%;
+    max-width: 900px;
+}
+
+.hero h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.hero p {
+    margin-top: 20px;
+    color: var(--muted);
+    font-size: 16px;
+}
+
+/* FEATURE IMAGE */
+.feature {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.feature img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    padding: 60px 10%;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.caption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--muted);
+}
+
+/* CONTACT */
+.contact {
+    padding: 100px 10%;
+    border-top: 1px solid var(--line);
+}
+
+.contact h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.contact a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+/* FOOTER */
+footer {
+    padding: 40px;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>yyza1 Productions</h1>
-    <p>Photography Portfolio</p>
-</header>
-
 <nav>
-    <a href="#">Home</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
+    <h1>YYZA1</h1>
+    <div>
+        <a href="#">Home</a>
+        <a href="#work">Work</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
-<section id="gallery" class="gallery">
-    <!-- Replace these with your own images -->
-    <img src="https://via.placeholder.com/500" alt="Photo 1">
-    <img src="https://via.placeholder.com/500" alt="Photo 2">
-    <img src="https://via.placeholder.com/500" alt="Photo 3">
-    <img src="https://via.placeholder.com/500" alt="Photo 4">
+<section class="hero">
+    <h2>Visual stories through light, contrast, and composition.</h2>
+    <p>Photography by yyza1. A curated editorial collection.</p>
 </section>
 
-<section id="contact" style="text-align:center; padding:40px;">
-    <h2>Contact</h2>
-    <p>DM me on Instagram</p>
-    <div class="instagram">
-        <a href="https://instagram.com/yourusername" target="_blank">
-            instagram.com/yourusername
-        </a>
+<section class="feature">
+    <img src="https://via.placeholder.com/1200x800">
+</section>
+
+<section id="work" class="grid">
+    <div class="card">
+        <img src="https://via.placeholder.com/600x800">
+        <div class="caption">Urban stillness</div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/600x800">
+        <div class="caption">Light & shadow</div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/600x800">
+        <div class="caption">Perspective</div>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/600x800">
+        <div class="caption">Moments</div>
     </div>
 </section>
 
+<section id="contact" class="contact">
+    <h3>Contact</h3>
+    <p style="margin-top:10px; color: var(--muted);">
+        For collaborations or inquiries.
+    </p>
+
+    <a href="https://instagram.com/yyza1" target="_blank">
+        @yyza1
+    </a>
+</section>
+
 <footer>
-    <p>© 2026 Your Name</p>
+    © 2026 yyza1
 </footer>
 
 </body>
